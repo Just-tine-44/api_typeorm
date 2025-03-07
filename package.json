@@ -2,9 +2,11 @@
   "name": "node-mysql-orm-(typeorm)-typescript---crud-api",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "ts-node server.ts",
+  "dev": "nodemon --exec ts-node server.ts",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,10 +19,20 @@
     "express": "^4.21.2",
     "joi": "^17.13.3",
     "mysql2": "^3.13.0",
+    "reflect-metadata": "^0.2.2",
     "rootpath": "^0.1.2",
-    "sequelize": "^6.37.6"
+    "sequelize": "^6.37.6",
+    "sequelize-typescript": "^2.1.6",
+    "typeorm": "^0.3.21"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "@types/sequelize": "^4.28.20",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
